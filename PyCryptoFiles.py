@@ -144,11 +144,7 @@ def Decryption():
 	Passwd  = getpass.getpass('[~]:{}@Shell => '.format(username)) 
 	result = hashlib.sha512(Passwd.encode()).hexdigest() 
 	clear()
-	print(Fore.CYAN+'***************************************'+Style.RESET_ALL)
-	print(Mrakp+' Start Decryption [=>] Files [<=] 010101 ')
-	print(Fore.CYAN+'***************************************'+Style.RESET_ALL)
-	sleep(0.40)
-	clear()
+	
 	System = platform.platform().split("-")[0]
 	if System=="Windows":
 		KEY_PATH =  GCWD+"\\"+'key.txt'
@@ -161,7 +157,11 @@ def Decryption():
 		READ_HASH_PASS = out.read()
 
 	if result == READ_HASH_PASS:
-
+		print(Fore.CYAN+'***************************************'+Style.RESET_ALL)
+		print(Mrakp+' Start Decryption [=>] Files [<=] 010101 ')
+		print(Fore.CYAN+'***************************************'+Style.RESET_ALL)
+		sleep(0.40)
+		clear()
 		os.chdir(Folder)
 		listFiles = os.listdir()
 		for i in listFiles:
