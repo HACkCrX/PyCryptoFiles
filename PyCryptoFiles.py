@@ -52,7 +52,7 @@ def encryption():
 
 	else:
 		print(Mrak+ ' Error Exception: Path Not [exists] Press Enter To Continue [<=]')
-		x=input()
+		input()
 		encryption()
 
 	print()
@@ -113,7 +113,7 @@ def encryption():
 			cmd('rm {}'.format(i))
 	print(Style.RESET_ALL)
 	os.chdir(GCWD)
-	x=input('[=>] PRESS [ENTER] TO CONTINUE [<=]')
+	input('[=>] PRESS [ENTER] TO CONTINUE [<=]')
 
 
 
@@ -133,7 +133,7 @@ def Decryption():
 	else:
 		Mrak = Fore.RED+"[-]"+Style.RESET_ALL
 		print(Mrak+ ' Error Exception: Path Not [exists] Press Enter To Continue [<=]')
-		x=input()
+		input()
 		Decryption()
 	print()
 	print(Fore.CYAN+'++++++++++++++++++++++++++++++++++++++')
@@ -182,12 +182,12 @@ def Decryption():
 				cmd('rm {}'.format(i))
 		print(Style.RESET_ALL)
 
-		x=input('[=>] PRESS [ENTER] TO CONTINUE [<=]')
+		input('[=>] PRESS [ENTER] TO CONTINUE [<=]')
 
 	else:
 		Mrak = Fore.RED+"[-]"+Style.RESET_ALL
 		print(Mrak,' Exception: [=>] [WorngPassword]:',end="")
-		x=input('[=>] PRESS [ENTER] TO CONTINUE [<=]')
+		input('[=>] PRESS [ENTER] TO CONTINUE [<=]')
 		sys.exit()
 		
 
