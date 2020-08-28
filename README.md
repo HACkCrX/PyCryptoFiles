@@ -1,5 +1,7 @@
 # PyCryptoFiles
 
+
+Linux or Windows system
 pip install -r requirements.txt
 
 supported extensions
