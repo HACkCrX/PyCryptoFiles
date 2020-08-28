@@ -188,7 +188,7 @@ def Decryption():
 		Mrak = Fore.RED+"[-]"+Style.RESET_ALL
 		print(Mrak,' Exception: [=>] [WorngPassword]:',end="")
 		input('[=>] PRESS [ENTER] TO CONTINUE [<=]')
-		sys.exit()
+		Decryption()
 		
 
 
