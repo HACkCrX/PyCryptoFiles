@@ -103,7 +103,7 @@ def encryption():
 		if IMG_EX in extensions :
 			print(Mrakp,"Encrypt => {}".format(i))
 		else:
-			print(Mrak,'Faild To Encrypt => {} Extension Not Supported'.format(i))
+			print(Mrakp,"Encrypt => {}".format(i))
 
 
 		System = platform.platform().split("-")[0]
